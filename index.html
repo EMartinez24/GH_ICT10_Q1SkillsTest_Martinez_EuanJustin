@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <h1><b>Food Ordering System</b></h1>
+    <div>
+        <p><b>Menu:</b></p>
+        <label>
+            <input type="checkbox" id="option1" value="1500">
+            Tour of Italy
+        </label><br>
+        <label>
+            <input type="checkbox" id="option2" value="695">
+            Chicken Parmigiana
+        </label><br>
+        <label>
+            <input type="checkbox" id="option3" value="750">
+            Lasagna Classico
+        </label><br>
+        <label>
+            <input type="checkbox" id="option4" value="795">
+            Shrimp Scampi
+        </label><br>
+        <label>
+            <input type="checkbox" id="option5" value="645">
+            Fettuccine Alfredo
+        </label>
+    </div>
+    <form>
+        <p><b>Customer Details:</b></p>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+        <input type="text" id="address" placeholder="Enter your address"><br>
+        <input type="text" id="number" placeholder="Enter your number"><br>
+        <input type="button" id="button" value="Create Order" py-click="create_order">
+    </form>
+    <div id="result"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
